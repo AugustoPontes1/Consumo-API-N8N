@@ -6,6 +6,8 @@ no banco de dados usando n8n
 ## Tecnologias Utilizadas
 - Python
 - Docker, Docker-Compose
+- Javascript
+- N8N
 
 - Código Python
 ```python
@@ -92,3 +94,7 @@ return [
   }
 ];
 ```
+
+- Workflow do N8N
+
+<img width="1215" height="449" alt="image" src="https://github.com/user-attachments/assets/ad32baa0-8b48-476c-9143-f5926f9b6e23" />
