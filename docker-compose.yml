@@ -1,0 +1,15 @@
+services:
+  n8n:
+    build: .
+    image: n8n-python-custom
+    container_name: n8n-python
+    ports:
+      - "5678:5678"
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+      - ./py_scripts:/home/node/py_scripts
+    environment:
+      - GENERIC_TIMEZONE=America/Sao_Paulo
+      - TZ=America/Sao_Paulo
+      # outras variáveis, se quiser autenticação etc
+    restart: unless-stopped
