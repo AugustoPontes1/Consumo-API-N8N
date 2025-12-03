@@ -20,9 +20,4 @@ RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 RUN pip install --no-cache-dir requests
 
-# opcional: se quiser instalar mais pacotes, pode fazer no requirements.txt
-# COPY requirements.txt /tmp/
-# RUN pip install --no-cache-dir -r /tmp/requirements.txt
-
-# voltar para usuário node
 USER node
